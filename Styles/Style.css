@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Tektur&display=swap');
+body{
+font-family: 'Alumni Sans Inline One', cursive;
+font-family: 'Tektur', cursive;
+background-color: #041562;
+}
+.titulo{
+    color: red;
+    font-size: 32px;
+}
+
+.subtitulo{
+    color: wheat;
+    font-size: 24px;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tarjetas, .tarjetasAtaques{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjetaMokepon{
+    width: 180px;
+    height: 100px;
+    background-color: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tarjetaMokepon img{
+    width: 80px;
+}
+
+#boton-mascota{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Tektur', cursive;
+    margin-top: 30px;
+}
+input{ 
+    display: none;
+}
+
+input:checked + label{
+    background-color: #5d8bf4;
+}
+
+#seleccionar_ataque{
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.botonAtaque{
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Tektur', cursive;
+    background: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+}
+
+#mensajes {
+    width: 280px;
+    padding: 20px;
+    background: #EEEEEE;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Tektur', cursive;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: #11468F;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Tektur', cursive;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.ataquesJugador, .ataquesEnemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#verMapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#verMapa button{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Tektur', cursive;
+    margin: 10px 0px;
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetasAtaques {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    #verMapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+}
